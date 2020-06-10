@@ -1,0 +1,114 @@
+.container{
+    border-style: groove;
+    margin: auto;
+    width: 30%;
+}
+
+/* -------------------- Start Head --------------------*/
+
+h1{
+    margin: 0;
+    place-self: start;
+}
+h2{
+    margin: 0;
+    place-self: start;
+}
+h1 p{
+    margin: 0;
+}
+h2 p{
+    margin: 0;
+}
+figure{
+    margin: 0;
+    place-self: center;
+}
+.container__head figure img{
+    width: 100px; 
+}
+.container .container__head{
+    display: grid;
+    grid-template: 40px 40px/ 30% 70%;
+    grid-template-areas: "container__zapatillaLogo container__titulo"
+                         "container__zapatillaLogo container__subtitulo";
+}
+.container__zapatillaLogo{
+    grid-area: container__zapatillaLogo;
+}
+.container__titulo{
+    grid-area: container__titulo;
+}
+.container__subtitulo{
+    grid-area: container__subtitulo;
+}
+
+/* -------------------- End Head --------------------*/
+
+
+/* -------------------- Start Body --------------------*/
+
+.container__body{
+    display: grid;
+    grid-template: 300px 50px / 18% 18% 18% 18% 18%;
+    grid-template-areas: "container__zapatilla container__zapatilla container__zapatilla container__zapatilla container__zapatilla"
+                         "container__parrafo container__parrafo container__parrafo container__parrafo container__parrafo";
+    grid-gap: 10px;
+}
+.container__parrafo{
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+.container__zapatilla{
+    grid-area: container__zapatilla;
+}
+.container__parrafo{
+    grid-area: container__parrafo;
+}
+.container__body figure img{
+    width: 400px; 
+}
+
+/* -------------------- End Body -------------------- */
+
+
+/* -------------------- Start Footer --------------------*/
+
+h4 a{
+    text-decoration: none;
+}
+h4{
+    margin: 0;
+}
+footer .container__heart img{
+    width: 30px; 
+    height: 30px;
+}
+footer h4{
+    place-self: center;
+}
+footer .container__share img{
+    width: 30px; 
+    height: 30px;
+}
+footer{
+    display: grid;
+    grid-template: 50px / 20% 20% 14% 18% 18%;
+    grid-template-areas: "container__action1 container__action2 . container__heart container__share";
+    grid-gap: 10px;
+}
+.container__action1{
+    grid-area: container__action1;
+}
+.container__action2{
+    grid-area: container__action2;
+}
+.container__heart{
+    grid-area: container__heart;
+}
+.container__share{
+    grid-area: container__share;
+}
+
+/* -------------------- End Footer --------------------*/
